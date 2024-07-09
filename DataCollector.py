@@ -303,6 +303,7 @@ def main():
     os.makedirs(results_folder, exist_ok=True)
 
     permutations = permutations[:max_permutations]
+    print(len(permutations))
 
     results = []
     all_queries = []

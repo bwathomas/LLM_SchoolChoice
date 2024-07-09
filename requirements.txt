@@ -2,3 +2,5 @@ pandas
 openai
 xlsxwriter
 configparser
+scipy
+scikit-learn
