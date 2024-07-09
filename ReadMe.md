@@ -91,6 +91,7 @@ python main.py
 
 The program will read the configuration, process permutations, query the OpenAI API, extract and match school names, and save the results to Excel files.
 
+In the event you are interested in changing the prompt, simply change prompt.txt. Words in bracket (such as [income]) in the prompt will be substituted by variables from Variables.xlsx. In order to change the schools considered valid answers by the program, change school_list.xlsx.
 ## Functions
 
 ### Reading Templates and Variables
