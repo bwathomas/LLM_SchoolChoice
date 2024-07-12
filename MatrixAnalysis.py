@@ -4,6 +4,17 @@ import configparser
 import scipy.stats as stats
 from sklearn.decomposition import PCA
 
+# Used to name variables appropriately
+DEFAULTS = {
+    'ethnicity': 'None',
+    'income': 'family',
+    'child ability': 'None',
+    'child gender': 'kid',
+    'child education level': 'K level',
+    'parent education': 'None',
+    'location': 'None'
+}
+
 # Load configuration from file
 def load_config(config_file):
     config = configparser.ConfigParser()
@@ -131,17 +142,6 @@ def main():
     # Load the data
     file_path = os.path.join(results_folder, results_file)
     df = pd.read_excel(file_path)
-
-    # Default variables to process variable names
-    DEFAULTS = {
-        'ethnicity': 'None',
-        'income': 'family',
-        'child ability': 'None',
-        'child gender': 'kid',
-        'child education level': 'K level',
-        'parent education': 'None',
-        'location': 'None'
-    }
 
     # Get school columns (robust to number of variables)
     school_columns = get_school_columns(df)[:school_n]

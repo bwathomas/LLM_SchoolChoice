@@ -1,6 +1,6 @@
 pandas
-openai
 xlsxwriter
+cython
+numpy
+openpyxl
 configparser
-scipy
-scikit-learn

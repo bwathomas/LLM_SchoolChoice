@@ -1,0 +1,11 @@
+# These are the general C dependencies and commands you might need to install them on a Debian-based system. Adjust as needed for your environment.
+
+# For cURL
+libcurl4-openssl-dev
+
+# For Windows API (if you're on Windows, you might need Visual Studio with the C++ development tools)
+# On Ubuntu or Debian-based systems, you can skip this since Windows headers are not available.
+
+# For general build tools
+build-essential
+python3-dev
